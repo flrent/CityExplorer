@@ -1,11 +1,13 @@
 Ext.application({
+    controllers: ["Villes", "Feeds"],
+
     name: 'CityExplorer',
 
     requires: [
         'Ext.MessageBox'
     ],
 
-    views: ['Main'],
+    views: ['Main','Feeds','TwitterDataView','Settings','Villes'],
 
     icon: {
         '57': 'resources/icons/Icon.png',
