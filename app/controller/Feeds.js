@@ -10,8 +10,25 @@ Ext.define('CityExplorer.controller.Feeds', {
         }
     },
     launch: function(app) {
+        
+        this.getFeeds().add({
+            styleHtmlContent:true,
+            html:'<h3>Derniers tweets</h3>'
+        });
+
         this.getFeeds().add({
             xtype:'twitterdataview'
         });
-    }  
+
+        this.getFeeds().add({
+            styleHtmlContent:true,
+            html:'<h3>Dernieres photos</h3>'
+        });
+        
+        this.getFeeds().add({
+            xtype:'flickrdataview'
+        });
+
+
+    }
 });

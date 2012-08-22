@@ -12,8 +12,6 @@ Ext.define('CityExplorer.controller.Villes', {
         }
     },
     showVilles: function() {
-        this.getVilles().add(Ext.create('Ext.Panel', {
-            html:'coucou'
-        }));
+
     }
 });

@@ -1,7 +1,7 @@
 Ext.define("CityExplorer.view.Settings", {
     extend: 'Ext.Panel',
     xtype:'settings',
-
+    requires:['Ext.form.FieldSet'],
     config: {
         title:'Settings',
         iconCls:'settings',
@@ -10,9 +10,6 @@ Ext.define("CityExplorer.view.Settings", {
                 docked: 'top',
                 xtype: 'titlebar',
                 title: 'Settings'
-            },
-            {
-                html:'Settings'
             }
         ]
     }

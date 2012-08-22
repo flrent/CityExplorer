@@ -1,3 +1,5 @@
+Ext.Loader.setConfig({disableCaching: false});
+
 Ext.application({
     controllers: ["Villes", "Feeds"],
 
@@ -7,7 +9,7 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
-    views: ['Main','Feeds','TwitterDataView','Settings','Villes'],
+    views: ['Main','Feeds','TwitterDataView','FlickrDataView','Settings','Villes'],
 
     icon: {
         '57': 'resources/icons/Icon.png',

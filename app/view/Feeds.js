@@ -5,6 +5,7 @@ Ext.define("CityExplorer.view.Feeds", {
     config: {
         title:'Actus',
         iconCls:'home',
+        scrollable:true,
         items: [
             {
                 docked: 'top',
@@ -12,8 +13,22 @@ Ext.define("CityExplorer.view.Feeds", {
                 title: 'Ville'
             },
             {
-                styleHtmlContent:true,
-                html:"<h3>Ici s'affichera les actualités de votre ville</h3>"
+                xtype:'toolbar',
+                docked:'top',
+                items:[
+                    {  
+                        xtype:'button',
+                        text:'Journaux'
+                    },
+                    {  
+                        xtype:'button',
+                        text:'Tweets'
+                    },
+                    {  
+                        xtype:'button',
+                        text:'Photos'
+                    }
+                ]
             }
         ]
     }
