@@ -6,9 +6,8 @@ Ext.define("CityExplorer.view.FlickrDataView", {
 
     config: {
         itemTpl: '<img src="http://farm{farm}.staticflickr.com/{server}/{id}_{secret}_s.jpg" style="float:left;margin-left:10px;margin-bottom:10px;" />',
-        styleHtmlContent:true,
-        height:1000,
         scrollable:false,
+        height:600,
         store: {
             autoLoad: true,
             fields: ['farm', 'id', 'isfamily', 'isfriend','ispublic', 'owner', 'secret', 'server', 'title'],

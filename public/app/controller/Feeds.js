@@ -3,31 +3,50 @@ Ext.define('CityExplorer.controller.Feeds', {
     
     config: {
         refs: {
-            feeds:"feeds"
+            feeds:"feeds",
+            twitterdataview:'twitterdataview',
+            flickrdataview:'flickrdataview',
         },
         control: {
-            
+            'twitterdataview': {
+                'itemtap': 'showTweet'
+            },
+            'flickrdataview': {
+                'itemtap': 'showPhoto'
+            }
         }
     },
+    showTweet: function(dataview, index, target, record, e) {
+        alert('coucou');
+    },
+    showPhoto: function(dataview, index, target, record, e) {
+        this.getFeeds().add({
+            xtype:'photoview',
+            data:record.data
+        });
+    },
     launch: function(app) {
-        
         this.getFeeds().add({
-            html:'<h3>Derniers tweets</h3>'
+            cls:'feeds-container',
+            layout:{type:'vbox'},
+            title:'Montréal',
+            scrollable:true,
+            defaults:{cls:'feeds'},
+            items:[
+                {
+                    html:'<h3>Derniers tweets</h3>'
+                },
+                {
+                    xtype:'twitterdataview'
+                },
+                {
+                    html:'<h3>Dernières photos</h3>'
+                },
+                {
+                    xtype:'flickrdataview'
+                }
+            ]
         });
-
-        this.getFeeds().add({
-            xtype:'twitterdataview'
-        });
-
-        this.getFeeds().add({
-            styleHtmlContent:true,
-            html:'<h3>Dernieres photos</h3>'
-        });
-        
-        this.getFeeds().add({
-            xtype:'flickrdataview'
-        });
-
 
     }
 });

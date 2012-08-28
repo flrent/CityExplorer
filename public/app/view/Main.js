@@ -6,7 +6,7 @@ Ext.define("CityExplorer.view.Main", {
     ],
     config: {
         tabBarPosition: 'bottom',
-
+        ui:'dark',
         items: [
             {
                 xtype:'feeds'    

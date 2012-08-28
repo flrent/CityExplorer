@@ -1,3 +1,5 @@
+$base-color:#EEE;
+
 @import 'sencha-touch/default/all';
 
 // You may remove any of the following modules that you
@@ -20,7 +22,21 @@
 
 .x-dataview-inner {padding:0!important;}
 
-.tweet {
-	background:white;
-	font-size:12px;
+.feeds {
+	background:#F8F8F8;
+	padding:10px;
+	.tweet {
+		font-size:12px;
+
+		span {
+			display:block;
+			font-size:13px;
+			font-weight: bold;
+			color:#2A2A2A;
+		}
+
+		img {float:left;margin-right:5px;border:1px solid #CCC;}
+
+		clear:both;
+	}	
 }

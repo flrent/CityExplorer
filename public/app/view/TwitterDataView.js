@@ -5,16 +5,15 @@ Ext.define("CityExplorer.view.TwitterDataView", {
     xtype:'twitterdataview',
 
     config: {
-        itemTpl: '<div class="tweet"><p><img src="{profile_image_url}" />{from_user} - {text}</p></div>',
-        styleHtmlContent:true,
-        height:400,
+        itemTpl: '<div class="tweet"><img src="{profile_image_url}" /><span>{from_user}</span>{text}</div>',
         scrollable:false,
+        height:600,
         store: {
             autoLoad: true,
             fields: ['from_user', 'text', 'profile_image_url'],
             proxy: {
                 type: 'jsonp',
-                url: 'http://search.twitter.com/search.json?q=montreal&rpp=20&p=1&result_type=popular',
+                url: 'http://search.twitter.com/search.json?q=montreal&rpp=10&p=1',
 
                 reader: {
                     type: 'json',

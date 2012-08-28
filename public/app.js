@@ -9,7 +9,7 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
-    views: ['Main','Feeds','TwitterDataView','FlickrDataView','Settings','Villes'],
+    views: ['Main','Feeds','TwitterDataView','FlickrDataView','Settings','Villes','PhotoView'],
 
     icon: {
         '57': 'resources/icons/Icon.png',
