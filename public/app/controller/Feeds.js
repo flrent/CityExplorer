@@ -12,17 +12,23 @@ Ext.define('CityExplorer.controller.Feeds', {
                 'itemtap': 'showTweet'
             },
             'flickrdataview': {
-                'itemtap': 'showPhoto'
+                'itemtap': 'handlerShowPhoto'
             }
+        },
+        routes: {
+            'photos/:id':'showPhotoRedirect'
         }
     },
-    showTweet: function(dataview, index, target, record, e) {
-        alert('coucou');
+    showPhotoRedirect: function(id) {
+        this.showPhoto(this.getFlickrdataview().getStore().getAt(id).data);
     },
-    showPhoto: function(dataview, index, target, record, e) {
+    handlerShowPhoto: function(dataview, index, target, record, e) {
+        this.redirectTo('photos/'+index);
+    },
+    showPhoto: function(data) {
         this.getFeeds().add({
             xtype:'photoview',
-            data:record.data
+            data:data
         });
     },
     launch: function(app) {

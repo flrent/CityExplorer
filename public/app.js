@@ -10,7 +10,7 @@ Ext.application({
     ],
 
     views: ['Main','Feeds','TwitterDataView','FlickrDataView','Settings','Villes','PhotoView'],
-
+    profiles: ['Phone', 'Tablet'],
     icon: {
         '57': 'resources/icons/Icon.png',
         '72': 'resources/icons/Icon~ipad.png',
@@ -34,7 +34,8 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('CityExplorer.view.Main'));
+     //   Ext.Viewport.add(Ext.create('CityExplorer.view.Main'));
+        console.log(CityExplorer.currentProfile);
     },
 
     onUpdated: function() {
