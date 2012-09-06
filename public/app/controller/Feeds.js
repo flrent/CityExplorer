@@ -13,11 +13,11 @@ Ext.define('CityExplorer.controller.Feeds', {
             },
             'flickrdataview': {
                 'itemtap': 'showPhoto'
+            },
+            'newsdataview': {
+                'itemtap':'showNews'
             }
         }
-    },
-    showTweet: function(dataview, index, target, record, e) {
-        alert('coucou');
     },
     showPhoto: function(dataview, index, target, record, e) {
         this.getFeeds().add({
@@ -44,6 +44,12 @@ Ext.define('CityExplorer.controller.Feeds', {
                 },
                 {
                     xtype:'flickrdataview'
+                },
+                {
+                    html:'<h3>Dernières news</h3>'
+                },
+                {
+                    xtype:'newsdataview'
                 }
             ]
         });
