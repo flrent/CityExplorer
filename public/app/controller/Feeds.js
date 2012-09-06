@@ -13,6 +13,10 @@ Ext.define('CityExplorer.controller.Feeds', {
             },
             'flickrdataview': {
                 'itemtap': 'handlerShowPhoto'
+                'itemtap': 'showPhoto'
+            },
+            'newsdataview': {
+                'itemtap':'showNews'
             }
         },
         routes: {
@@ -50,6 +54,12 @@ Ext.define('CityExplorer.controller.Feeds', {
                 },
                 {
                     xtype:'flickrdataview'
+                },
+                {
+                    html:'<h3>Dernières news</h3>'
+                },
+                {
+                    xtype:'newsdataview'
                 }
             ]
         });
