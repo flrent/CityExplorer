@@ -4,7 +4,7 @@ Ext.application({
     name: 'CityExplorer',
 
     controllers: ["Villes", "Feeds"],
-    views: ['Main','Feeds','TwitterDataView','FlickrDataView','Settings','Villes','PhotoView','NewsDataView'],
+    views: ['Main','Feeds','TwitterDataView','FlickrDataView','Settings','Villes','PhotoView','NewsDataView','NewsView'],
     stores:['Tweets','Photos','News'],
     models:['Tweet','Photo','New'],
 
@@ -35,8 +35,7 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-     //   Ext.Viewport.add(Ext.create('CityExplorer.view.Main'));
-        console.log(CityExplorer.currentProfile);
+        Ext.Viewport.add(Ext.create('CityExplorer.view.Main'));
     },
 
     onUpdated: function() {

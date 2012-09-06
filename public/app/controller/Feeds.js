@@ -13,10 +13,9 @@ Ext.define('CityExplorer.controller.Feeds', {
             },
             'flickrdataview': {
                 'itemtap': 'handlerShowPhoto'
-                'itemtap': 'showPhoto'
             },
             'newsdataview': {
-                'itemtap':'showNews'
+                'itemtap':'handlerShowNews'
             }
         },
         routes: {
@@ -29,9 +28,18 @@ Ext.define('CityExplorer.controller.Feeds', {
     handlerShowPhoto: function(dataview, index, target, record, e) {
         this.redirectTo('photos/'+index);
     },
+    handlerShowNews: function(dataview, index, target, record, e) {
+        this.showNews(record.data);
+    },
     showPhoto: function(data) {
         this.getFeeds().add({
             xtype:'photoview',
+            data:data
+        });
+    },
+    showNews: function(data) {
+        this.getFeeds().add({
+            xtype:'newsview',
             data:data
         });
     },

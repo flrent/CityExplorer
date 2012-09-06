@@ -21,7 +21,7 @@ $base-color:#EEE;
 /** overrides **/
 
 .x-dataview-inner {padding:0!important;}
-
+.clear {clear:both;}
 .feeds {
 	background:#F8F8F8;
 	padding:10px;
@@ -45,8 +45,9 @@ $base-color:#EEE;
 	padding:10px;
 	background:#FFF;
 	
-	a {
-		font-family: 12px;
+	p {
+		font-size: 12px;
 		color:#2A2A2A;
 	}
+	img {float:left;width:100px;margin-right:10px;}
 }

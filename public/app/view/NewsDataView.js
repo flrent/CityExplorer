@@ -5,9 +5,9 @@ Ext.define("CityExplorer.view.NewsDataView", {
     xtype:'newsdataview',
 
     config: {
-        itemTpl: '<div class="news"><a href="{link}">{title}</a></div>',
+        itemTpl: '<div class="news"><img src="{img}" /><p><a href="#">{title}</a></p><div class="clear"></div></div>',
         scrollable:false,
-        height:600,
+        height:1400,
         store: 'News'
     },
     initialize: function() {
