@@ -1,12 +1,12 @@
-Ext.Loader.setConfig({disableCaching: false});
+//Ext.Loader.setConfig({disableCaching: false});
 
 Ext.application({
     name: 'CityExplorer',
 
-    controllers: ["Villes", "Feeds"],
-    views: ['Main','Feeds','TwitterDataView','FlickrDataView','Settings','Villes','PhotoView','NewsDataView','NewsView'],
-    stores:['Tweets','Photos','News'],
-    models:['Tweet','Photo','New'],
+    controllers: ["Cities", "Feeds"],
+    views: ['Main','Feeds','TwitterDataView','FlickrDataView','Cities','PhotoView','NewsDataView','NewsView'],
+    stores:['Tweets','Photos','News','Cities'],
+    models:['Tweet','Photo','New', 'City'],
 
     requires: [
         'Ext.MessageBox'

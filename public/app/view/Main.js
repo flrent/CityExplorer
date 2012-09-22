@@ -13,9 +13,6 @@ Ext.define("CityExplorer.view.Main", {
             },
             {
                 xtype:'villes'
-            },
-            {
-                xtype:'settings'
             }
         ]
     }

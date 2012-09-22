@@ -52,12 +52,6 @@ Ext.define('CityExplorer.controller.Feeds', {
             defaults:{cls:'feeds'},
             items:[
                 {
-                    html:'<h3>Derniers tweets</h3>'
-                },
-                {
-                    xtype:'twitterdataview'
-                },
-                {
                     html:'<h3>Dernières photos</h3>'
                 },
                 {
@@ -68,6 +62,12 @@ Ext.define('CityExplorer.controller.Feeds', {
                 },
                 {
                     xtype:'newsdataview'
+                },
+                {
+                    html:'<h3>Derniers tweets</h3>'
+                },
+                {
+                    xtype:'twitterdataview'
                 }
             ]
         });
