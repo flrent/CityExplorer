@@ -37,6 +37,12 @@ Ext.define('CityExplorer.controller.Feeds', {
             data:data
         });
     },
+    showTweet: function(data) {
+        this.getFeeds().add({
+            xtype:'tweetview',
+            data:data
+        });
+    },
     showNews: function(data) {
         this.getFeeds().add({
             xtype:'newsview',

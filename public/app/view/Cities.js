@@ -7,6 +7,7 @@ Ext.define("CityExplorer.view.Cities", {
     config: {
         title:'Villes',
         iconCls:'team',
+        layout:{type:'vbox'},
         items: [
             {
                 docked: 'top',
@@ -17,12 +18,12 @@ Ext.define("CityExplorer.view.Cities", {
                 xtype:'fieldset',
                 title:'Villes',
                 style:'padding:20px',
+                layout:'fit',
                 items:[
                     {
                         xtype:'list',
                         store:'Cities',
-                        itemCls:'{name}',
-                        height:80
+                        itemCls:'{name}'
                     }
                 ]
             },
