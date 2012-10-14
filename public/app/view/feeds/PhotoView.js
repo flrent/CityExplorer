@@ -1,4 +1,4 @@
-Ext.define("CityExplorer.view.PhotoView", {
+Ext.define("CityExplorer.view.feeds.PhotoView", {
     extend: 'Ext.Panel',
     xtype:'photoview',
 

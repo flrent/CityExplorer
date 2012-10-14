@@ -1,4 +1,4 @@
-Ext.define("CityExplorer.view.TweetView", {
+Ext.define("CityExplorer.view.feeds.TweetView", {
     extend: 'Ext.Panel',
     xtype:'tweetview',
 

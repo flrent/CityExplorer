@@ -1,4 +1,4 @@
-Ext.define("CityExplorer.view.NewsView", {
+Ext.define("CityExplorer.view.feeds.NewsView", {
     extend: 'Ext.Panel',
     xtype:'newsview',
 

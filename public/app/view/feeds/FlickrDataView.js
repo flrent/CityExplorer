@@ -1,4 +1,4 @@
-Ext.define("CityExplorer.view.FlickrDataView", {
+Ext.define("CityExplorer.view.feeds.FlickrDataView", {
     extend: 'Ext.dataview.DataView',
 
     requires:['Ext.dataview.DataView','Ext.data.Store','Ext.data.proxy.JsonP'],

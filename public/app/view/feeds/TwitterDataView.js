@@ -1,14 +1,14 @@
-Ext.define("CityExplorer.view.NewsDataView", {
+Ext.define("CityExplorer.view.feeds.TwitterDataView", {
     extend: 'Ext.dataview.DataView',
 
     requires:['Ext.dataview.DataView','Ext.data.Store','Ext.data.proxy.JsonP'],
-    xtype:'newsdataview',
+    xtype:'twitterdataview',
 
     config: {
-        itemTpl: '<div class="news"><img src="{img}" /><p><a href="#">{title}</a></p><div class="clear"></div></div>',
+        itemTpl: '<div class="tweet"><img src="{profile_image_url}" /><span>{from_user}</span>{text}</div>',
         scrollable:false,
-        height:1400,
-        store: 'News'
+        height:600,
+        store: 'Tweets'
     },
     initialize: function() {
         this.callParent();

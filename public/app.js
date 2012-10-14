@@ -1,10 +1,19 @@
-//Ext.Loader.setConfig({disableCaching: false});
-
+//<debug>
+Ext.Loader.setConfig({disableCaching: false});
+//</debug>
 Ext.application({
     name: 'CityExplorer',
 
-    controllers: ["Cities", "Feeds"],
-    views: ['Main','Feeds','TwitterDataView','FlickrDataView','Cities','PhotoView','NewsDataView','NewsView'],
+    controllers: [
+        "Wizard",
+        "Cities", "Feeds"
+    ],
+    views: [
+        'Main',
+        'wizard.Main','wizard.Start','wizard.Social','wizard.Finish',
+        'Onglets','Feeds','Cities',
+        'feeds.TwitterDataView','feeds.FlickrDataView','feeds.PhotoView','feeds.NewsDataView','feeds.NewsView',
+    ],
     stores:['Tweets','Photos','News','Cities'],
     models:['Tweet','Photo','New', 'City'],
 
