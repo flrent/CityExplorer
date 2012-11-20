@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html [
+  <!ENTITY % htmlDTD
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "DTD/xhtml1-strict.dtd">
+  %htmlDTD;
+  <!ENTITY % globalDTD
+    SYSTEM "chrome://global/locale/global.dtd">
+  %globalDTD;
+  <!ENTITY % feedDTD
+    SYSTEM "chrome://browser/locale/feeds/subscribe.dtd">
+  %feedDTD;
+]>
+<?xml-stylesheet href="news_fichiers/global.css" type="text/css"?>
+<html id="feedHandler" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Latest News</title>
+    <link rel="stylesheet" href="news_fichiers/subscribe.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="news_fichiers/subscribe_002.css" type="text/css" media="all" />
+    <script type="application/javascript" src="news_fichiers/subscribe.js"></script>
+  </head>
+  <body onload="SubscribeHandler.writeContent();" onunload="SubscribeHandler.uninit();">
+    <div id="feedHeaderContainer">
+      <div id="feedHeader" dir="ltr" class="feedBackground">
+        <div id="feedIntroText">
+          <p id="feedSubscriptionInfo1"></p>
+          <p id="feedSubscriptionInfo2"></p>
+        </div>
+        <div id="feedSubscribeLine"></div>
+      </div>
+    </div>
+
+    <script type="application/javascript">
+      SubscribeHandler.init();
+    </script>
+
+    <div id="feedBody">
+      <div id="feedTitle">
+        <a id="feedTitleLink">
+          <img id="feedTitleImage" />
+        </a>
+        <div id="feedTitleContainer">
+          <h1 id="feedTitleText">Latest News</h1>
+          <h2 id="feedSubtitleText"></h2>
+        </div>
+      </div>
+      <div id="feedContent"><div class="entry"><h3><a href="http://quebec.huffingtonpost.ca/2012/10/14/mauritanie-le-prsident-_n_1964477.html">Mauritanie: le président blessé</a><div class="lastUpdated">14 octobre 2012 00:30</div></h3><div xml:base="http://quebec.huffingtonpost.ca/feeds/verticals/canada-quebec/news.xml" class="feedEntryContent">Le
+ président de la Mauritanie, Mohamed Ould Abdel Aziz, a été légèrement 
+blessé par des coups de feu amicaux, samedi, après que son véhicule 
+eut...</div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://quebec.huffingtonpost.ca/2012/10/14/can-2013---sngal-cte-d_n_1965095.html">CAN-2013 - Sénégal-Côte d'Ivoire: Dakar regrette les incidents de samedi</a><div class="lastUpdated">14 octobre 2012 12:16</div></h3><div class="feedEntryContent">Le
+ ministre sénégalais de l'Intérieur, Mbaye Ndiaye, a regretté les 
+incidents ayant provoqué samedi soir à Dakar l'arrêt d'un match de 
+football contre la Côte...</div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://quebec.huffingtonpost.ca/2012/10/14/francophonie-les-prochai_n_1965094.html">Francophonie: les prochains sommets "dans des pays démocratiques" (Stephen Harper)</a><div class="lastUpdated">14 octobre 2012 12:15</div></h3><div class="feedEntryContent">Le
+ Premier ministre canadien Stephen Harper souhaite que les prochains 
+sommets de la Francophonie se tiennent "uniquement dans des pays 
+démocratiques", a-t-il déclaré dimanche à...</div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://quebec.huffingtonpost.ca/2012/10/14/laventurier-autrichien-b_n_1965093.html">L'aventurier autrichien Baumgartner en route pour franchir le mur du son</a><div class="lastUpdated">14 octobre 2012 12:15</div></h3><div class="feedEntryContent">L'aventurier
+ autrichien Felix Baumgartner a décollé dimanche matin au 
+Nouveau-Mexique (sud-ouest) dans une capsule attachée à un ballon gonflé
+ à l'hélium qui doit l'amener à...</div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://quebec.huffingtonpost.ca/2012/10/14/coupe-du-monde-petit-bas_n_1965092.html">Coupe du monde (petit bassin) - Stockholm - 2e journée: encore Hosszu</a><div class="lastUpdated">14 octobre 2012 12:15</div></h3><div class="feedEntryContent">La Hongroise Katinka Hosszu a réalisé un nouveau triplé en s'imposant sur 400 m nage libre, 100 m 4 nages et 400 m 4 nages,...</div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://quebec.huffingtonpost.ca/2012/10/14/des-dizaines-de-corps-dc_n_1965091.html">Des dizaines de corps découverts près de Damas (ONG)</a><div class="lastUpdated">14 octobre 2012 12:15</div></h3><div class="feedEntryContent">Des
+ dizaines de corps, probablement des combattants rebelles, ont été 
+découverts au sud-ouest de Damas, a rapporté dimanche l'Observatoire 
+syrien de droits de l'Homme (OSDH)."Nous...</div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://quebec.huffingtonpost.ca/2012/10/14/lhomme-prhistorique-aur_n_1965096.html">L'homme préhistorique aurait mangé du panda</a><div class="lastUpdated">14 octobre 2012 12:16</div></h3><div class="feedEntryContent">L'homme
+ préhistorique se nourrissait de pandas, estime un scientifique 
+chinois.Dans un entretien au Chongqing Morning Post paru vendredi, Wei 
+Guangbiao, qui dirige l'Institut de paléoanthropologie...</div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://quebec.huffingtonpost.ca/2012/10/14/vettle-prend-la-tte-du-c_n_1965076.html">Vettle prend la tête du championnat après une victoire en Corée du Sud</a><div class="lastUpdated">14 octobre 2012 12:03</div></h3><div class="feedEntryContent">YEONGAM,
+ Corée du Sud - Fort d'un troisième gain de suite, l'Allemand Sebastian 
+Vettel s'approche maintenant d'un troisième championnat d'affilée en 
+Formule Un.Vettel a prévalu...</div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://quebec.huffingtonpost.ca/2012/10/14/gaza-deux-palestiniens-t_n_1965069.html">Gaza: deux Palestiniens tués et deux blessés dans un nouveau raid israélien (médecins)</a><div class="lastUpdated">14 octobre 2012 12:00</div></h3><div class="feedEntryContent">Deux
+ Palestiniens ont été tués et deux autres grièvement blessés dimanche 
+après-midi lors d'un nouveau raid aérien israélien dans la bande de 
+Gaza, selon des...</div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://quebec.huffingtonpost.ca/2012/10/14/mur-du-son-en-chute-libre_n_1965048.html">Mur du son en chute libre: le ballon qui transporte Baumgartner a décollé</a><div class="lastUpdated">14 octobre 2012 11:45</div></h3><div class="feedEntryContent">Le
+ ballon gonflé à l'hélium duquel le parachutiste de l'extrême Felix 
+Baumgartner doit s'élancer pour tenter de franchir le mur du son en 
+chute libre...</div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://quebec.huffingtonpost.ca/2012/10/14/urgent--mur-du-son-en-ch_n_1965047.html">URGENT ¥ Mur du son en chute libre: le ballon qui transporte le parachutiste a décollé</a><div class="lastUpdated">14 octobre 2012 11:45</div></h3><div class="feedEntryContent">Le
+ ballon gonflé à l'hélium duquel le parachutiste de l'extrême Felix 
+Baumgartner doit s'élancer pour tenter d'atteindre le mur du son chute 
+libre a décollé...</div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://quebec.huffingtonpost.ca/2012/10/14/libye-lassemble-nation_n_1965033.html">Libye: l'Assemblée nationale élit dimanche soir un nouveau Premier ministre</a><div class="lastUpdated">14 octobre 2012 11:30</div></h3><div class="feedEntryContent">L'Assemblée
+ nationale libyenne doit élire dimanche soir un nouveau Premier 
+ministre, une semaine après avoir évincé Moustapha Abou Chagour, qui 
+avait échoué à faire accepter...</div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://quebec.huffingtonpost.ca/2012/10/14/inbee-park-bat-na-yeon-ch_n_1965037.html">Inbee Park bat Na Yeon Choi par deux coups à l'Omnium de la Malaisie</a><div class="lastUpdated">14 octobre 2012 11:33</div></h3><div class="feedEntryContent">KUALA
+ LUMPUR, Malaisie - La Sud-Coréeenne Inbee Park a joué 67 en route vers 
+sa deuxième victoire de 2012, dimanche, battant sa compatriote Na 
+Yeon...</div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://quebec.huffingtonpost.ca/2012/10/14/le-prsident-isralien-de_n_1965032.html">Le président israélien demande au Brésil de boycotter l'Iran</a><div class="lastUpdated">14 octobre 2012 11:30</div></h3><div class="feedEntryContent">Le
+ président israélien Shimon Pérès a demandé dimanche au Brésil de 
+boycotter son homologue iranien Mahmoud Ahmadinejad, selon un communiqué
+ de la présidence israélienne."Nous attendons...</div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://quebec.huffingtonpost.ca/2012/10/14/la-ministre-de-la-justice_n_1965020.html">La ministre de la Justice française menace les maires opposés au mariage gay</a><div class="lastUpdated">14 octobre 2012 11:18</div></h3><div class="feedEntryContent">PARIS
+ - "Les maires devront répondre de leur comportement" en cas de refus de
+ marier un couple homosexuel, a prévenu dimanche la ministre française 
+de...</div></div><div style="clear: both;"></div></div>
+    </div>
+  </body>
+</html>

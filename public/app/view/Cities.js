@@ -30,6 +30,7 @@ Ext.define("CityExplorer.view.Cities", {
                         text:'Vider',
                         handler: function() {
                             Ext.getStore("Cities").removeAll();
+                            Ext.getStore("Cities").sync();
                         }
                     }
                 ]
