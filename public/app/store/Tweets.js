@@ -6,7 +6,7 @@ Ext.define('CityExplorer.store.Tweets', {
 
         proxy: {
             type: 'jsonp',
-            url: 'http://search.twitter.com/search.json?q=montreal&rpp=10&p=1',
+            url: 'http://search.twitter.com/search.json',
 
             reader: {
                 type: 'json',

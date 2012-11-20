@@ -1,5 +1,8 @@
 //<debug>
-Ext.Loader.setConfig({disableCaching: false});
+Ext.Loader.setConfig({disableCaching:false});
+// So Sencha won't add timestamp when fetching resources, and we can keep breakpoints
+
+//NOTE : anything between debug tags will be remove at build time
 //</debug>
 Ext.application({
     name: 'CityExplorer',
@@ -12,7 +15,8 @@ Ext.application({
         'Main',
         'wizard.Main','wizard.Start','wizard.Social','wizard.Finish',
         'Onglets','Feeds','Cities',
-        'feeds.TwitterDataView','feeds.FlickrDataView','feeds.PhotoView','feeds.NewsDataView','feeds.NewsView',
+        'feeds.TwitterDataView','feeds.FlickrDataView','feeds.PhotoView','feeds.NewsDataView','feeds.NewsView','feeds.TweetView',
+        'villes.Liste'
     ],
     stores:['Tweets','Photos','News','Cities'],
     models:['Tweet','Photo','New', 'City'],

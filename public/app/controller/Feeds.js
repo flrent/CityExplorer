@@ -5,9 +5,12 @@ Ext.define('CityExplorer.controller.Feeds', {
         refs: {
             feeds:"feeds",
             twitterdataview:'twitterdataview',
-            flickrdataview:'flickrdataview',
+            flickrdataview:'flickrdataview'
         },
         control: {
+            feeds:{
+                refreshFeeds:'refreshFeeds'
+            },
             'twitterdataview': {
                 'itemtap': 'showTweet'
             },
@@ -32,6 +35,7 @@ Ext.define('CityExplorer.controller.Feeds', {
         this.showNews(record.data);
     },
     showPhoto: function(data) {
+
         this.getFeeds().add({
             xtype:'photoview',
             data:data
@@ -50,10 +54,33 @@ Ext.define('CityExplorer.controller.Feeds', {
         });
     },
     launch: function(app) {
+
+    },
+    getCity: function() {
+        return Ext.getStore("Cities").getAt(0).get("value");
+    },
+    refreshFeeds: function() {
+        this.getFeeds().removeAll();
+        var storePhotos = Ext.getStore("Photos");
+            storePhotos.getProxy().setExtraParams({
+                q:'select * from flickr.photos.search where text = "'+this.getCity()+'" and api_key="6c064b055aaf10cbe60761b3f9c8816c" limit 10',
+                format:'json',
+                diagnostics:true
+            });
+            storePhotos.load();
+
+        var storeTweets = Ext.getStore("Tweets");
+            storeTweets.getProxy().setExtraParams({
+                q:this.getCity(),
+                rpp:10,
+                p:1
+            });
+            storeTweets.load();
+
         this.getFeeds().add({
             cls:'feeds-container',
             layout:{type:'vbox'},
-            title:'Montréal',
+            title:this.getCity(),
             scrollable:true,
             defaults:{cls:'feeds'},
             items:[
@@ -64,19 +91,18 @@ Ext.define('CityExplorer.controller.Feeds', {
                     xtype:'flickrdataview'
                 },
                 {
-                    html:'<h3>Dernières news</h3>'
-                },
-                {
-                    xtype:'newsdataview'
-                },
-                {
                     html:'<h3>Derniers tweets</h3>'
                 },
                 {
                     xtype:'twitterdataview'
-                }
+                }/*,
+                {
+                    html:'<h3>Dernières news</h3>'
+                },
+                {
+                    xtype:'newsdataview'
+                }*/
             ]
         });
-
     }
 });

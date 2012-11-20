@@ -4,6 +4,7 @@ Ext.define('CityExplorer.view.wizard.Finish',{
 
 	config: {
 		styleHtmlContent:true,
+		scrollable:'vertical',
 		layout:{
 			type:'vbox',
 			align:'stretch'

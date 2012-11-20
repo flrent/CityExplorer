@@ -9,9 +9,5 @@ Ext.define("CityExplorer.view.feeds.FlickrDataView", {
         scrollable:false,
         height:270,
         store: 'Photos'
-    },
-    initialize: function() {
-        this.callParent();
-        this.getStore().load();
     }
 });

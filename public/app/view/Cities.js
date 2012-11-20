@@ -3,44 +3,34 @@ Ext.define("CityExplorer.view.Cities", {
     xtype:'villes',
     requires:['Ext.form.FieldSet','Ext.dataview.List'],
 
-
     config: {
         title:'Villes',
         iconCls:'team',
-        layout:{type:'vbox'},
+        layout:{type:'fit'},
         items: [
             {
-                docked: 'top',
-                xtype: 'titlebar',
-                title: 'Villes'
+                xtype:'toolbar',
+                docked:'top',
+                title:'Villes'
             },
             {
-                xtype:'fieldset',
-                title:'Villes',
-                style:'padding:20px',
-                layout:'fit',
-                items:[
-                    {
-                        xtype:'list',
-                        store:'Cities',
-                        itemCls:'{name}'
-                    }
-                ]
+                xtype:'villesListe'
             },
             {
-                xtype:'fieldset',
-                title:'Ajoutez une ville',
-                style:'padding:20px;',
+                xtype:'toolbar',
+                docked:'bottom',
+                defaults:{flex:1},
                 items:[
                     {
-                        xtype:'textfield',
-                        label:"Nom",
-                        placeHolder:"Montréal"
+                        ui:'action',
+                        text:'Ajouter une ville'
                     },
                     {
-                        xtype:'textfield',
-                        label:"Mot clef",
-                        placeHolder:"montreal"
+                        ui:'action',
+                        text:'Vider',
+                        handler: function() {
+                            Ext.getStore("Cities").removeAll();
+                        }
                     }
                 ]
             }

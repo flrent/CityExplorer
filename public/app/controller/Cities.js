@@ -3,16 +3,16 @@ Ext.define('CityExplorer.controller.Cities', {
     
     config: {
         refs: {
-
+            'wizardMain':'wizardMain',
         },
         control: {
         }
     },
     launch: function() {
-        var store = Ext.getStore("Cities");
-            store.add({name:"Montréal", value:"montreal"});
-            store.sync();
-            store.load();
-
+        Ext.getStore("Cities").load();
+        
+        if(Ext.getStore("Cities").getCount()>0) {
+            this.getWizardMain().fireEvent("hideWizard");
+        }
     }
 });
